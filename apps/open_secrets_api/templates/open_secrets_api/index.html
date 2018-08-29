@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Home</title>
+{% endblock%}
+
+
+{% block content %}
+<div class="container">
+    <h1>Open Secrets Political Spending API</h1>
+    <h2>California Politics</h2>
+    {% for legislator in ca_legislator %}
+        <h6>{{ legislator }}</h6>
+    {% endfor %}
+    <!--<h6>{{ ca_legislator }}</h6>
+    <h6>{{ca_legs_response}}</h6>-->
+</div>
+{% endblock %}

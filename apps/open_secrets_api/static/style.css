@@ -1,0 +1,15 @@
+body{
+    background-color: #003366;
+    color:#CC0033;
+}
+
+.container{
+     background-color: #CC0033;;
+     color: black;
+     border-radius: 10px;
+     margin-bottom: 10px;
+}
+
+a{
+    color: white;
+}
