@@ -9,8 +9,17 @@
 <div class="container">
     <h1>Open Secrets Political Spending API</h1>
     <h2>California Politics</h2>
+    {{ keys }}
     {% for legislator in ca_legislator %}
-        <h6>{{ legislator }}</h6>
+        {% for keys,values in legislator.iteritems %}
+            {% for key in values.keys %}
+                <h6>{{ key.title }}</h6>
+            {% endfor %}
+            {% for value in values.values %}
+            <h6>{{ value }}</h6>
+            {% endfor %}
+            <br>
+        {% endfor %}
     {% endfor %}
     <!--<h6>{{ ca_legislator }}</h6>
     <h6>{{ca_legs_response}}</h6>-->
