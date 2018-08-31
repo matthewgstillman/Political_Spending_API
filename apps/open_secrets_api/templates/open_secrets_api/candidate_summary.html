@@ -8,13 +8,27 @@
 {% block content %}
 <a href="/">Go Back</a>
 <div class="container">
-    <h6>legislator {{ legislators_array }}</h6>
     <h1>Open Secrets Political Spending API</h1>
     <h2>California Candidate Summary</h2>
     <!--<h6>{{ candidate_summary_response }}</h6>
     <h6>{{ candidate_summary }}</h6>-->
-    {% for item in items_array %}
-        <h6>{{ item.0.title }} - {{ item.1 }}</h6>
-    {% endfor %}
+    <!--{% for key, value in items_array.iteritems %}
+        <h6>{{key.value}}</h6>
+    {% endfor %}-->
+    <h6>{{items_array.0.0.title}}: {{items_array.0.1.title}}</h6>
+    <h6>{{items_array.1.0.title}}: {{items_array.1.1.title}}</h6>
+    <h6>{{items_array.2.0.title}}: ${{items_array.2.1.title}}</h6>
+    <h6>{{items_array.3.0.title}}: {{items_array.3.1.title}}</h6>
+    <h6>{{items_array.4.0.title}}: {{items_array.4.1.title}}</h6>
+    <h6>{{items_array.5.0.title}}: {{items_array.5.1.title}}</h6>
+    <h6>{{items_array.6.0.title}}: ${{items_array.6.1.title}}</h6>
+    <h6>{{items_array.7.0.title}}: {{items_array.7.1.title}}</h6>
+    <h6>{{items_array.8.0.title}}: {{items_array.8.1}}</h6>
+    <h6>{{items_array.9.0.title}}: {{items_array.9.1.title}}</h6>
+    <h6>{{items_array.10.0.title}}: <a href="{{items_array.10.1}}">{{items_array.10.1 }}</a></h6>
+    <h6>{{items_array.11.0.title}}: {{items_array.11.1.title}}</h6>
+    <h6>{{items_array.12.0.title}}: ${{items_array.12.1.title}}</h6>
+    <h6>{{items_array.13.0.title}}: ${{items_array.13.1.title}}</h6>
+    <h6>{{items_array.14.0.title}}: {{items_array.14.1.title}}</h6>
 </div>
 {% endblock %}

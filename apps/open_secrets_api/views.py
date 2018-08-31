@@ -19,7 +19,7 @@ def index(request):
         legislators_array.append(key)
         print("Value: " + str(value))
         legislators_array.append(value)
-        for i in range(0, len(legislators_array)):
+        for i in range(0, 56):
             print("Length of Legislators Array: " + str(len(legislators_array)))
             legs = legislators_array[i]
             print("Legs: " + str(legs))

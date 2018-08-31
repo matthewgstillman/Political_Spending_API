@@ -996,6 +996,10 @@
         <h6>Votesmart ID: {{value.votesmart_id}}</h6>
     {% endfor %}
     <br>
-    {{ legislators_array.1 }}
+    {% for key, value in legislators_array.1.iteritems %}
+        <h6>{{ key }}</h6>
+        <h6>{{ value }}</h6>
+    {% endfor %}
+    <!--{{ legislators_array.1 }}-->
 </div>
 {% endblock %}
