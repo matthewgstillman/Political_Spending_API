@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Candidate Summary</title>
+{% endblock%}
+
+
+{% block content %}
+<a href="/">Go Back</a>
+<div class="container">
+    <h1>Open Secrets Political Spending API</h1>
+    <h2>California Candidate Summary</h2>
+    <h6>{{ candidate_summary_response }}</h6>
+    <h6>{{ candidate_summary }}</h6>
+</div>
+{% endblock %}
