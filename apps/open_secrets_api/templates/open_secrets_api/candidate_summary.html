@@ -8,9 +8,13 @@
 {% block content %}
 <a href="/">Go Back</a>
 <div class="container">
+    <h6>legislator {{ legislators_array }}</h6>
     <h1>Open Secrets Political Spending API</h1>
     <h2>California Candidate Summary</h2>
-    <h6>{{ candidate_summary_response }}</h6>
-    <h6>{{ candidate_summary }}</h6>
+    <!--<h6>{{ candidate_summary_response }}</h6>
+    <h6>{{ candidate_summary }}</h6>-->
+    {% for item in items_array %}
+        <h6>{{ item.0.title }} - {{ item.1 }}</h6>
+    {% endfor %}
 </div>
 {% endblock %}

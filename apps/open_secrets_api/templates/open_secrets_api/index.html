@@ -10,15 +10,39 @@
 <div class="container">
     <h1>Open Secrets Political Spending API</h1>
     <h2>California Legislators</h2>
-    {% for legislator in ca_legislator %}
-        {% for keys,values in legislator.iteritems %}
-            {% for key in values.keys %}
-                {% for value in values.values %}
-                <h6>{{ key.title }}: {{ value }}</h6>
-                {% endfor %}
-            {% endfor %}
-            <br>
-        {% endfor %}
+    <!--{% for key, value in legs.iteritems %}
+        <h6>{{value.firstlast}}</h6>
+        <h6>Party: {{value.party}}</h6>
+        <h6>Gender: {{value.gender}}</h6>
+        <h6>First Elected: {{value.first_elected}}</h6>
+        <h6>Website: {{value.website}}</h6>
+        <h6>Contact: {{value.webform}}</h6>
+        <h6>Office: {{value.congress_office}}</h6>
+        <h6>Phone: {{value.phone}}</h6>
+        <h6>Fax: {{value.fax}}</h6>
+        <h6>Twitter: @{{value.twitter_id}}</h6>
+        <h6>Facebook: http://www.facebook.com/{{value.facebook_id}}</h6>
+        <h6>Youtube URL: {{value.youtube_url}}</h6>
+        <h6>Bioguide ID: {{value.bioguide_id}}</h6>
+        <h6>Votesmart ID: {{value.votesmart_id}}</h6>
+    {% endfor %}-->
+    <!--<br>-->
+    {% for key, value in legislators_array.1.0.iteritems %}
+        <h6>{{value.firstlast}}</h6>
+        <h6>Party: {{value.party}}</h6>
+        <h6>Gender: {{value.gender}}</h6>
+        <h6>First Elected: {{value.first_elected}}</h6>
+        <h6>Website: {{value.website}}</h6>
+        <h6>Contact: {{value.webform}}</h6>
+        <h6>Office: {{value.congress_office}}</h6>
+        <h6>Phone: {{value.phone}}</h6>
+        <h6>Fax: {{value.fax}}</h6>
+        <h6>Twitter: @{{value.twitter_id}}</h6>
+        <h6>Facebook: http://www.facebook.com/{{value.facebook_id}}</h6>
+        <h6>Youtube URL: {{value.youtube_url}}</h6>
+        <h6>Bioguide ID: {{value.bioguide_id}}</h6>
+        <h6>Votesmart ID: {{value.votesmart_id}}</h6>
     {% endfor %}
+    {{ legislators_array.1.0 }}
 </div>
 {% endblock %}
