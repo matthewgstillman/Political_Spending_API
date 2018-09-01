@@ -10,40 +10,31 @@ def index(request):
     response = requests.get(url)
     ca_legs = response.json()
     ca_legs_response = ca_legs['response']
-    print("Response: " + str(ca_legs_response))
+    # print("Response: " + str(ca_legs_response))
     ca_legislator = ca_legs_response['legislator']
     print("California Legislators: " + str(ca_legislator))
+
     legislators_array = []
-    for key, value in ca_legs_response.iteritems():
-        print("Key: " + str(key))
-        legislators_array.append(key)
-        print("Value: " + str(value))
-        legislators_array.append(value)
-        for i in range(0, 56):
-            print("Length of Legislators Array: " + str(len(legislators_array)))
-            legs = legislators_array[i]
-            print("Legs: " + str(legs))
-            i += 1
-            print("i=" + str(i))
-            # print("Key: " + str(key) + "Value: " + str(value))
-        #Below Doesn't Work - Yet
-        # for key, value in ca_legislator.iteritems():
-        #     print(key, value)
-        #     for key, value in value.iteritems():
-        #         print("Key: " + str(key) + ", Value: " + str(value))
-        #         for item in value.iteritems():
-        #             print("Key: " + str(key) + ", Value: " + str(value))
-        #             print("Item: " + str(item))
-        #             legislators_array.append(item)
-            context = {
-                'attributes': attributes,
-                'ca_legislator': ca_legislator,
-                'ca_legs': ca_legs,
-                'ca_legs_response': ca_legs_response,
-                'legislators_array': legislators_array,
-                'legs': legs,
-                }
-            return render(request, 'open_secrets_api/index.html', context)
+    
+    for i in range(0, 56):
+        legislator = ca_legislator[i][attributes]
+        print("Legislator: " + str(legislator))
+        legislators_array.append(legislator)
+        # legs = legislators_array[i]
+        # print("Legs: " + str(legs))
+        print("i = " + str(i))
+        i += 1
+        print("NOW i = " + str(i))
+
+    context = {
+        'attributes': attributes,
+        'ca_legislator': ca_legislator,
+        'ca_legs': ca_legs,
+        'ca_legs_response': ca_legs_response,
+        'legislators_array': legislators_array,
+        # 'legs': legs,
+        }
+    return render(request, 'open_secrets_api/index.html', context)
 
 def candidate_contributions(request):
     donors_array = []
@@ -138,3 +129,26 @@ def candidate_summary(request):
                 'candidate_summary_response': candidate_summary_response,
             }
             return render(request, 'open_secrets_api/candidate_summary.html', context)
+
+
+def expenditures(request):
+    expenditure_item_array = []
+    attributes = '@attributes'
+    url = ('http://www.opensecrets.org/api/?method=independentExpend&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    response = requests.get(url)
+    expenditures = response.json()
+    print("Expenditures: " + str(expenditures))
+    expenditure_response = expenditures['response']
+    expenditure_index = expenditure_response['indexp']
+    for i in range(0,50):
+        expenditure_item = expenditure_index[i][attributes]
+        print("Expenditure Item: " + str(expenditure_item))
+        expenditure_item_array.append(expenditure_item)
+        i += 1
+    context = {
+        'expenditures': expenditures,
+        'expenditure_index': expenditure_index,
+        'expenditure_item_array': expenditure_item_array,
+        'expenditure_response': expenditure_response,
+    }
+    return render(request, 'open_secrets_api/expenditures.html', context)

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Independent Expenditures</title>
+{% endblock%}
+
+
+{% block content %}
+<a href="/candidate_summary">Candidate Summary</a>
+<br>
+<a href="/candidate_contributions">See Candidate Contributions</a>
+<br>
+<a href="/candidate_summary">See Candidate Summary</a>
+<br>
+<a href="/">Go Back</a>
+<div class="container">
+    <br>
+    <h1>Open Secrets Political Spending API</h1>
+    <h1>Independent Expenditures</h1>
+    {% for item in expenditure_item_array %}
+        <h2>Candidate Name: {{item.candname}}</h2>
+        <h6>Party: {{item.party}}</h6>
+        <h6>Origin: {{item.origin}}</h6>
+        <h6>PAC Comittee: {{item.pacshort}}</h6>
+        <h6>Committee ID: {{item.cmteid}}</h6>
+        <h6>Amount Spent: ${{item.amount}}</h6>
+        {% if item.note %}
+        <h6>Note: {{item.note}}</h6>
+        {% endif %}
+        {% if item.payee %}
+        <h6>Payee: {{item.payee}}</h6>
+        {% endif %}
+        <h6>Origin: {{item.origin}}</h6>
+        <h6>Source: <a href="{{item.source}}">{{item.source}}</a></h6>
+        <h6>Supports or Opposes: {{item.suppopp}}</h6>
+        <h6>District: {{item.district}}</h6>
+        <h6>Date: {{item.date}}</h6>
+        <br>
+    {% endfor %}
+    {{expenditure_index}}
+    {{expenditure_response}}
+    <h6>Expenditures: {{ expenditures }}</h6>
+</div>
+{% endblock %}
