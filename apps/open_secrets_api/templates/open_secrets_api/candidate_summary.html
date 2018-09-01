@@ -7,14 +7,12 @@
 
 {% block content %}
 <a href="/">Go Back</a>
+<br>
+<a href="/candidate_contributions">See Candidate Contributions</a>
 <div class="container">
+    <br>
     <h1>Open Secrets Political Spending API</h1>
     <h2>California Candidate Summary</h2>
-    <!--<h6>{{ candidate_summary_response }}</h6>
-    <h6>{{ candidate_summary }}</h6>-->
-    <!--{% for key, value in items_array.iteritems %}
-        <h6>{{key.value}}</h6>
-    {% endfor %}-->
     <h6>{{items_array.0.0.title}}: {{items_array.0.1.title}}</h6>
     <h6>{{items_array.1.0.title}}: {{items_array.1.1.title}}</h6>
     <h6>{{items_array.2.0.title}}: ${{items_array.2.1.title}}</h6>
@@ -30,5 +28,6 @@
     <h6>{{items_array.12.0.title}}: ${{items_array.12.1.title}}</h6>
     <h6>{{items_array.13.0.title}}: ${{items_array.13.1.title}}</h6>
     <h6>{{items_array.14.0.title}}: {{items_array.14.1.title}}</h6>
+    <br>
 </div>
 {% endblock %}

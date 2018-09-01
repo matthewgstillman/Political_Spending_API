@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Candidate Summary</title>
+{% endblock%}
+
+
+{% block content %}
+<a href="/">Go Back</a>
+<div class="container">
+    <br>
+    <h1>Open Secrets Political Spending API</h1>
+    <h2>California Candidate Contributions</h2>
+    {% for key, value in contributors.iteritems %}
+        <h6>Contributors: {{value.iteri}}</h6>
+        <h6>Origin: {{value.origin}}</h6>
+        <h6>Notice: {{value.notice}}</h6>
+        <h6>Candidate Name: {{value.cand_name}}</h6>
+        <h6>Candidate ID: {{value.cid}}</h6>
+        <h6>Candidate Source: <a href="{{value.source}}">{{value.source}}</a></h6>
+        <h6>Election Cycle: {{value.cycle}}</h6>
+        {% for key, value in value.iteritems %}
+            <!--<h6>{{value.key}}</h6>-->
+            {% for item in value.iteritems %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+    <h6>{{ contributors }}</h6>
+    <br>
+</div>
+{% endblock %}

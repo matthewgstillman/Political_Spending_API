@@ -45,6 +45,37 @@ def index(request):
                 }
             return render(request, 'open_secrets_api/index.html', context)
 
+def candidate_contributions(request):
+    attributes = '@attributes'
+    url = ('https://www.opensecrets.org/api/?method=candContrib&cid=N00007360&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    response = requests.get(url)
+    candidate_contributions = response.json()
+    # print("Candidate Contributions: " + str(candidate_contributions))
+    candidate_response = candidate_contributions['response']
+    # print("Candidate Response: " + str(candidate_response))
+    contributors = candidate_response['contributors']
+    print("Contributors: " + str(contributors))
+    candidate_contributor = contributors['contributor']
+    print("Candidate Contributer: " + str(candidate_contributor[0][attributes]['org_name']))
+    contributor_attributes = contributors[attributes]
+    print("Contributor Attributes: " + str(contributor_attributes))
+    for organization in candidate_contributor:
+        print("Organization: " + str(organization))
+        for key, value in contributors.iteritems():    
+            print("Key: " + str(key) + ", Value: " + str(value))
+            for key, value in value.iteritems():
+                print("First Value: " + str(value))
+                print("Key: " + str(key) + ", Value: " + str(value))
+                for item in value:
+                    print("ITEM: " + str(item))
+                    context = {
+                        'candidate_contributions': candidate_contributions,
+                        'candidate_response': candidate_response,
+                        'contributors': contributors,
+                        }
+                    return render(request, 'open_secrets_api/candidate_contributions.html', context)
+
+
 def candidate_summary(request):
     url = ('http://www.opensecrets.org/api/?method=candSummary&cid=N00007360&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
     response = requests.get(url)
