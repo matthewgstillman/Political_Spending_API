@@ -87,6 +87,33 @@ def candidate_contributions(request):
                         }
                     return render(request, 'open_secrets_api/candidate_contributions.html', context)
 
+def candidate_industry(request):
+    industry_type_array = []
+    attributes = '@attributes'
+    url = ('https://www.opensecrets.org/api/?method=candIndustry&cid=N00007360&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    # url = ('http://www.opensecrets.org/api/?method=candSummary&cid=N00007360&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    response = requests.get(url)
+    candidate_industry = response.json()
+    print("Candidate Donations By Industry: " + str(candidate_industry))
+    industries = candidate_industry['response']['industries']['industry']
+    print("Industries: " + str(industries))
+    candidate_attributes = candidate_industry['response']['industries'][attributes]
+    print("Candidate Attributes: " + str(candidate_attributes))
+    candidate_name = candidate_industry['response']['industries'][attributes]['cand_name']
+    print("Candidate Name: " + str(candidate_name))
+    for i in range(0, 10):
+        industry_type = industries[i][attributes]
+        print("Industry Type: " + str(industry_type))
+        industry_type_array.append(industry_type)
+        i += 1
+    context = {
+        'candidate_attributes': candidate_attributes,
+        'candidate_name': candidate_name,
+        'candidate_industry': candidate_industry,
+        'industries': industries,
+        'industry_type_array': industry_type_array,
+    }
+    return render(request, 'open_secrets_api/candidate_industry.html', context)
 
 def candidate_summary(request):
     url = ('http://www.opensecrets.org/api/?method=candSummary&cid=N00007360&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')

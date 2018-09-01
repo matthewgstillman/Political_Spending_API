@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Candidate Contributions By Indusry</title>
+{% endblock%}
+
+
+{% block content %}
+<a href="/">Go Back</a>
+<div class="container">
+    <br>
+    <h1>Open Secrets Political Spending API</h1>
+    <h1>{{ candidate_name }} Contributions By Industry</h1>
+    <h6>Candidate Name: {{ candidate_attributes.cand_name }}</h6>
+    <h6>Origin: {{ candidate_attributes.origin }}</h6>
+    <h6>Candidate ID: {{ candidate_attributes.cid }}</h6>
+    <h6>Source: <a href="{{candidate_attributes.source}}">{{candidate_attributes.source}}</a></h6>
+    <h6>Last Updated: {{ candidate_attributes.last_updated }}</h6>
+    {% for industry in industry_type_array %}
+        <h3>Industry Type: {{ industry.industry_name }}</h3>
+        <h6>Total: {{ industry.total }}</h6>
+        <h6>Total From PACs: {{ industry.pacs }}</h6>
+        <h6>Total From Large Individual Contributions: {{ industry.indivs }}</h6>
+        <h6>Industry Code: {{ industry.industry_code }}</h6>
+        <br>
+    {% endfor %}
+</div>
+{% endblock %}
