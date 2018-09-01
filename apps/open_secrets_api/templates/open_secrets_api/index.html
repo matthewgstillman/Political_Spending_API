@@ -19,17 +19,35 @@
     <h2>California Legislators</h2>
     {% for legislator in legislators_array %}
         <h2>{{legislator.firstlast}}</h2>
-        <h6>Party: {{legislator.party}}</h6>
-        <h6>Gender: {{legislator.gender}}</h6>
+        {% if legislator.party == 'D' %}
+        <h6>Party: Democrat</h6>
+        {% endif %}
+        {% if legislator.party == 'R' %}
+        <h6>Party: Republican</h6>
+        {% endif %}
+        {% if legislator.gender == 'M'%}
+        <h6>Gender: Male</h6>
+        {% endif %}
+        {% if legislator.gender == 'F'%}
+        <h6>Gender: Female</h6>
+        {% endif %}
         <h6>First Elected: {{legislator.first_elected}}</h6>
         <h6>Website: <a href="{{legislator.website}}">{{legislator.website}}</a></h6>
-        <h6>Website: <a href="mailto:{{legislator.webform}}">{{legislator.webform}}</a></h6>
+        {% if legislator.webform %}
+        <h6>Contact: <a href="mailto:{{legislator.webform}}">{{legislator.webform}}</a></h6>
+        {% endif %}
         <h6>Office: {{legislator.congress_office}}</h6>
         <h6>Phone: {{legislator.phone}}</h6>
         <h6>Fax: {{legislator.fax}}</h6>
-        <h6>Twitter: @{{legislator.twitter_id}}</h6>
-        <h6>Facebook: http://www.facebook.com/{{legislator.facebook_id}}</h6>
-        <h6>Youtube URL: {{legislator.youtube_url}}</h6>
+        {% if legislator.twitter_id %}
+        <h6>Twitter: <a href="http://www.twitter.com/{{legislator.twitter_id}}">@{{legislator.twitter_id}}</a></h6>
+        {% endif %}
+        {% if legislator.facebook_id %}
+        <h6>Facebook: <a href="http://www.facebook.com/{{legislator.facebook_id}}">http://www.facebook.com/{{legislator.facebook_id}}</a></h6>
+        {% endif %}
+        {% if legislator.youtube_url %}
+        <h6>Youtube URL: <a href="http://www.youtube.com/{{legislator.youtube_url}}">http://www.youtube.com/{{legislator.youtube_url}}</a></h6>
+        {% endif %}
         <h6>Bioguide ID: {{legislator.bioguide_id}}</h6>
         <h6>Votesmart ID: {{legislator.votesmart_id}}</h6>
         <br>
