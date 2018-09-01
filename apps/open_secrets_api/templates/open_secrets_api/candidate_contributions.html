@@ -11,19 +11,30 @@
     <br>
     <h1>Open Secrets Political Spending API</h1>
     <h2>California Candidate Contributions</h2>
+    <h2>Donors For Nancy Pelosi </h2>
+    {% for donor in donors_array %}
+            <h3>{{ donor.org_name }}</h3>
+            <h6>Number of Workers: {{ donor.indivs }}</h6>
+            <h6>Total Donations: {{ donor.total }}</h6>
+            <h6>Total PAC Contributions: {{ donor.pacs }}</h6>
+            <br>
+    {% endfor %}
+    <h3>Candidate Name: {{ contributor_attributes.cand_name }}</h3>
+    <h6>Donation Origins: {{ contributor_attributes.origin }}</h6>
+    <h6>Donation Notice: {{ contributor_attributes.notice }}</h6>
+    {{ contributor_attributes }}
+    {% for contributor in contributor_attributes %}
+            <h6>{{ contributor.origin }}</h6>
+            <h6>{{ contributor.notice }}</h6>
+            <h6>{{ contributor.cand_name }}</h6>
+    {% endfor%}
     {% for key, value in contributors.iteritems %}
-        <h6>Contributors: {{value.iteri}}</h6>
         <h6>Origin: {{value.origin}}</h6>
         <h6>Notice: {{value.notice}}</h6>
         <h6>Candidate Name: {{value.cand_name}}</h6>
         <h6>Candidate ID: {{value.cid}}</h6>
         <h6>Candidate Source: <a href="{{value.source}}">{{value.source}}</a></h6>
         <h6>Election Cycle: {{value.cycle}}</h6>
-        {% for key, value in value.iteritems %}
-            <!--<h6>{{value.key}}</h6>-->
-            {% for item in value.iteritems %}
-            {% endfor %}
-        {% endfor %}
     {% endfor %}
     <h6>{{ contributors }}</h6>
     <br>

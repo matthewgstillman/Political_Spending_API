@@ -46,6 +46,7 @@ def index(request):
             return render(request, 'open_secrets_api/index.html', context)
 
 def candidate_contributions(request):
+    donors_array = []
     attributes = '@attributes'
     url = ('https://www.opensecrets.org/api/?method=candContrib&cid=N00007360&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
     response = requests.get(url)
@@ -56,7 +57,14 @@ def candidate_contributions(request):
     contributors = candidate_response['contributors']
     print("Contributors: " + str(contributors))
     candidate_contributor = contributors['contributor']
-    print("Candidate Contributer: " + str(candidate_contributor[0][attributes]['org_name']))
+    print("Candidate Contributor: " + str(candidate_contributor))
+    for i in range(0,10):
+        donors = candidate_contributor[i][attributes]
+        print("Donor # " + str(i+1) + ": " + str(donors))
+        donors_array.append(donors)
+        i += 1
+    org_name = candidate_contributor[0][attributes]['org_name']
+    print("Organization Name: " + str(candidate_contributor[0][attributes]['org_name']))
     contributor_attributes = contributors[attributes]
     print("Contributor Attributes: " + str(contributor_attributes))
     for organization in candidate_contributor:
@@ -69,9 +77,13 @@ def candidate_contributions(request):
                 for item in value:
                     print("ITEM: " + str(item))
                     context = {
+                        'attributes': attributes,
                         'candidate_contributions': candidate_contributions,
                         'candidate_response': candidate_response,
+                        'contributor_attributes': contributor_attributes,
                         'contributors': contributors,
+                        'donors_array': donors_array,
+                        'org_name': org_name,
                         }
                     return render(request, 'open_secrets_api/candidate_contributions.html', context)
 
