@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^candidate_summary$', views.candidate_summary, name="candidate_summary"),
     url(r'^candidate_contributions$', views.candidate_contributions, name="candidate_contributions"),
     url(r'^expenditures$', views.expenditures, name="expenditures"),
+    url(r'^other_states$', views.other_states, name="other_states"),
 ]

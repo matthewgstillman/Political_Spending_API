@@ -5,8 +5,13 @@ from objectpath import *
 
 # Create your views here.
 def index(request):
+    session_state_abr = request.session['state_abr']
+    print("Session State Abbreviation: " + str(session_state_abr))
     attributes = '@attributes'
-    url = ('http://www.opensecrets.org/api/?method=getLegislators&id=CA&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    url_root = 'http://www.opensecrets.org/api/?method=getLegislators&id='
+    url_tail = '&output=json&apikey=11c4c60af966085902db37697f3c52e3'
+    url = str(url_root) + str(session_state_abr) + str(url_tail)
+    print("URL: " + str(url))
     response = requests.get(url)
     ca_legs = response.json()
     ca_legs_response = ca_legs['response']
@@ -16,7 +21,7 @@ def index(request):
 
     legislators_array = []
     
-    for i in range(0, 56):
+    for i in range(0, 10):
         legislator = ca_legislator[i][attributes]
         print("Legislator: " + str(legislator))
         legislators_array.append(legislator)
@@ -152,3 +157,16 @@ def expenditures(request):
         'expenditure_response': expenditure_response,
     }
     return render(request, 'open_secrets_api/expenditures.html', context)
+
+def other_states(request):
+    if request.method == 'POST':
+        state_abr = request.POST['state']
+        print("State Abbreviation: " + str(state_abr))
+        request.session['state_abr'] = state_abr
+        session_state_abr = request.session['state_abr']
+        context = {
+            'session_state_abr': session_state_abr,
+        }
+        return redirect('/', context)
+    if request.method == 'GET':
+        return render(request, 'open_secrets_api/other_states.html')
