@@ -4532,399 +4532,399 @@ name_dict = {
     "Francis, Jim"
     "Franco, Chris"
     "Franco, Gary"
-    Franco, Ricardo
-    Francois, Vennia
-    Frank, Alexis
-    Frank, Ben
-    Frankel, Lois J
-    Franklin, George
-    Franklin, W Benjamin
-    Franks, Trent
-    Fraser, Aaron
-    Fraser, Diane
-    Fredland, E.C.
-    Fredrich, John Karl
-    Freeman, April
-    Freeman, Mark
-    Freilich, Daniel
-    Freitas, Nick
-    Frelinghuysen, Rodney
-    Frenette, Kyle
-    Frerick, Austin
-    Frick, Bill
-    Friday, Steven
-    Friedbaum, Jeremy
-    Friedenberg, Marc
-    Friedman, Alison
-    Fritz, Dennis
-    Frost, Nadine
-    Fudge, Marcia L
-    Fuentes, Louis
-    Fuentes, Talia
-    Fuhrman, Scott
-    Fukumoto, Beth
-    Fulcher, Russ
-    Fulford, Jonathan
-    Fuller, Virginia
-    Fullington, Brad
-    Furay, Guy
-    Furstenberg, Lori
-    Gabbard, John
-    Gabbard, Tulsi
-    Gaetz, Matt
-    Gagliardi, Deborah
-    Gaither, Kevin
-    Galbraith, Allison
-    Galbraith, John Michael
-    Gale, Neal
-    Gallagher, Mike
-    Gallant, Rick
-    Gallego, Ruben
-    Gallegos, Alex
-    Gallo, Louis
-    Galvin, Alyse
-    Ganjoo, Shalesh
-    Garamendi, John
-    Garbett, Jan
-    Garcia, Adrian
-    Garcia, Dominique
-    Garcia, Enrique
-    Garcia, Jesus
-    Garcia, Joshua M
-    Garcia, Ramon Hyron
-    Garcia, Roel
-    Garcia, Sylvia
-    Garcia-Ureste, Alia
-    Gardner, Jonah
-    Garfield, Daniel G.
-    Garland, Jerone
-    Garrett, Janet
-    Garrett, Tom
-    Garrod, Eponine
-    Garves, Ben
-    Garza, Mauro
-    Garza, Melissa "Sharkie"
-    Gaskins, Samuel
-    Gaspar, Kristin
-    Gasper, Theresa
-    Gasque, Dorothy
-    Gassman, Eddie
-    Gaughan, Lawrence
-    Gayot, Lutchi
-    Gazala, Sarah
-    Gearheart, Marty
-    Gebbia, Jack
-    Genovese, Sal
-    Gentile, Dominic
-    Gentry, Dillon
-    George, Gary
-    George, John
-    Geppert, Katy
-    Geren, Mary
-    Germanotta, Juliet Dita
-    Germanson, Larry
-    Gershon, Perry
-    Ghee, Antony
-    Ghorbani, Shireen
-    Ghosh, Rash Bihari
-    Ghumman, Usman
-    Gianforte, Greg
-    Gianukos, Nikolus Dimitry
-    Gibbons, Mike
-    Gibbs, Bob
-    Gibbs, David
-    Gibson, Joey
-    Gibson, Mark
-    Gifford, Rufus
-    Gildersleeve, Tim
-    Giles, Dave
-    Gill, David
-    Gillibrand, Kirsten
-    Gilmer, Robin
-    Gilmore, Michael
-    Gilmore, Shawn
-    Gilpin, Tim
-    Gipson, Fred
-    Girgis, Michael Fahmy
-    Glassman, Mary
-    Glenn, Darryl
-    Glisson, Vickie
-    Gluck, George
-    Goda, Brett
-    Godfrey, Aaron
-    Godfrey, Curtis
-    Gohmert, Louis B Jr
-    Goins, Clarence
-    Goldberg, Brian
-    Golden, Ian
-    Golden, Jared
-    Goldstein, Beverly A.
-    Goldstein, Michael
-    Gomes, Tim
-    Gomez, Jimmy
-    Gonzalez, Anthony
-    Gonzalez, Jason D.
-    Gonzalez, Jenniffer
-    Gonzalez, Julio
-    Gonzalez, Kristen Rosen
-    Gonzalez, Rey
-    Gonzalez, Richard
-    Gonzalez, Travis
-    Gonzalez, Vicente
-    Gooden, Lance
-    Goodlatte, Bob
-    Goodman, Shira Ms.
-    Goodrich, Grant
-    Goodwin, David
-    Gosai, Dushyant
-    Gosar, Paul
-    Gottheimer, Josh
-    Gowdy, Trey
-    Graben, Eric Knox
-    Grady, Paul
-    Graf, James
-    Graham, John
-    Graham, Samaria
-    Granger, Kay
-    Grant, Andrew
-    Grant, Kevin
-    Grassie, Bill
-    Graves, Christopher
-    Graves, Garret
-    Graves, Sam
-    Graves, Tom
-    Grawert, Keith
-    Gray, Aida
-    Gray, Bob
-    Gray, Jim
-    Gray, Phil
-    Grayson, Alan
-    Grayson, Dena
-    Graziani, John
-    Green, Al
-    Green, Bill
-    Green, Gene
-    Green, James
-    Green, Mark
-    Green, Rick
-    Green, Theodore David
-    Greenaway, Diedra
-    Greene, Joan
-    Greene, Michael
-    Greenfield, Steven
-    Greenfield, Theresa
-    Gregory, DuWayne
-    Gregory, Jeff
-    Greimel, Tim
-    Gressmann, Gerhard
-    Griesey, Darin
-    Griffin, Bradley
-    Griffin, Calvin
-    Griffin, Clayburn
-    Griffin, Jim
-    Griffin, Michelle
-    Griffin, Steven
-    Griffith, George
-    Griffith, Morgan
-    Griggs, David R.
-    Grigorian, Christina
-    Grijalva, Raul M
-    Grimes, Demetries
-    Grimm, Michael
-    Grisez, Brandon
-    Grohman, Marty
-    Gross, Ken
-    Grossman, Seth
-    Grothman, Glenn S
-    Grubbs, Mackenzie
-    Gruber, Jason Bradley
-    Grunau, Jeffrey
-    Grundmann, Don
-    Grunwald, John
-    Grusenmeyer, Michael
-    Guest, Michael Patrick
-    Guild, Tom
-    Guillory, Josh
-    Guillory, Ryan
-    Gumina, Tony
-    Gunderson, Scott
-    Gunnels, Patrick
-    Gunning, Jim
-    Gupta, Suneel
-    Guthrie, Brett
-    Gutierrez, Luis V
-    Guyette, Matthew
-    Haaf, Grace
-    Haaland, Debra
-    Haas, Bill
-    Haberman, Daniel
-    Hackett, Pat
-    Hader, Shannon
-    Hafner, Carol
-    Hafner, Eric
-    Hagan, Christina
-    Hagan, Mallory
-    Hagan, Vic
-    Hagedorn, Jim
-    Hagen, Foster
-    Hagerman, Janice "Byrd"
-    Hagg, Brian G
-    Haggman, Matt
-    Haggman, Matthew W
-    Hahn, Pat
-    Haji, Abdulkadir
-    Halcovage, George
-    Hale, Christopher
-    Hall, Isadore
-    Hall, Jerry
-    Hall, Matthew
-    Hall, Mel
-    Hall, Seth
-    Halverstadt, Jon
-    Halvorson, Art
-    Hamadanchy, Kia
-    Hamblin, Hank
-    Hamilton, Dan
-    Hamilton, Eddie
-    Hammer, Alex
-    Hammond, Larry Guy
-    Hammond, Scott
-    Hanania, Jason
-    Hancock, Joshua L
-    Handel, Karen
-    Hanlon, Karl
-    Hansen, Michael
-    Hansen, West
-    Hanson, Ben
-    Hanson, Cyndi
-    Hanson, Dave
-    Hanson, Tom
-    Harbaugh, Ken
-    Harber, Jason Allen
-    Harder, Josh
-    Hardy, Charlie
-    Hardy, Cresent
-    Harkey, Diane
-    Harmon, Patrick
-    Harmon, Wayne E
-    Harper, Gregg
-    Harper, Sean
-    Harrell, Sally
-    Harrell, Vic
-    Harris, Andy
-    Harris, Irving
-    Harris, Katherine Moore
-    Harris, Kerri
-    Harris, Mark
-    Harris, Matt
-    Harris, Pat
-    Harris, Tamara
-    Harris, Thomas E
-    Harris, Tim
-    Harrison, Adam
-    Harrison, Kevin
-    Harrison, Peter
-    Harrison, Tom
-    Hart, Kristopher
-    Hart, Richard
-    Hartford, Andrew
-    Hartley, Michael
-    Hartman, Christina
-    Hartman, Darrell
-    Hartman, Katherine
-    Hartson, Alison
-    Hartzler, Vicky
-    Harvey, Floyd
-    Hash, Martin
-    Hashimi, Nadia
-    Haskell, Jason
-    Hassan, Muad
-    Hassell, Mel
-    Hassett, Doug
-    Hastings, Alcee L
-    Hatch, Orrin G
-    Hatfield, Kenneth
-    Haulmark, Chris
-    Havens, Jonathan
-    Hawkins, Matt C
-    Hawley, Josh
-    Hayes, Jahana
-    Haywood, Chaz
-    Hazel, Robert
-    Hazel, Shane
-    Hearsey, Chris
-    Heck, Dennis
-    Heck, Tom
-    Heckroth, Thomas
-    Heenan, John
-    Heffernan, Peter
-    Hegar, Mary Jennings
-    Heidel, Jack
-    Heineman, Aaron
-    Heines, Matthew D
-    Heinrich, Martin
-    Heinz, Matt
-    Heise, Kurt
-    Heitkamp, Heidi
-    Heitner, Jesse Andrew
-    Heller, Dean
-    Helm, Travis
-    Helmer, Daniel
-    Henderson, Deidre
-    Henderson, Nick
-    Henderson, Terry
-    Hendricks, Michael
-    Hendrickson, Duwayne
-    Hendrickson, George
-    Heng, Elizabeth
-    Henry, Brendon
-    Henry, David Dean
-    Henry, Ed
-    Henry, James Francis Mr.
-    Henry, William O
-    Hensarling, Jeb
-    Hepburn, Michael
-    Hermanson, Barry
-    Hern, Kevin
-    Hernandez, Alexander
-    Hernandez, Benjamin
-    Hernandez, Carlos
-    Hernandez, Christian
-    Hernandez, Sara
-    Hernandez, Sema
-    Herrell, Yvette
-    Herrod, Chris
-    Herschel, Judy
-    Herschfus, Marc
-    Hertzler, John G
-    Heslin, Alison
-    Hewitt, Martin
-    Hice, Jody B
-    Hickey, Adam
-    Hicks, Sander
-    Hicks, Tom
-    Hidalgo, Juan
-    Higgins, Brian M
-    Higgins, Clay
-    Hildebrand, David
-    Hildebrandt, Madeline
-    Hildt, Robert
-    Hile, Brian
-    Hill Knott, Kimberly
-    Hill, Dean
-    Hill, French
-    Hill, Judson
-    Hill, Katie
-    Hill, Owen
-    Hill, Ryan
-    Hill, Shak
-    Hill, Tracella Lou O'Hara
-    Hillgardner, Thomas J
-    Hilliard, Jerome C
-    Himes, Jim
-    Hinchman, Clayton
-    Hinson, Yvonne Hayes
-    Hirono, Mazie K
+    "Franco, Ricardo"
+    "Francois, Vennia"
+    "Frank, Alexis"
+    "Frank, Ben"
+    "Frankel, Lois J"
+    "Franklin, George"
+    "Franklin, W Benjamin"
+    "Franks, Trent"
+    "Fraser, Aaron"
+    "Fraser, Diane"
+    "Fredland, E.C."
+    "Fredrich, John Karl"
+    "Freeman, April"
+    "Freeman, Mark"
+    "Freilich, Daniel"
+    "Freitas, Nick"
+    "Frelinghuysen, Rodney"
+    "Frenette, Kyle"
+    "Frerick, Austin"
+    "Frick, Bill"
+    "Friday, Steven"
+    "Friedbaum, Jeremy"
+    "Friedenberg, Marc"
+    "Friedman, Alison"
+    "Fritz, Dennis"
+    "Frost, Nadine"
+    "Fudge, Marcia L"
+    "Fuentes, Louis"
+    "Fuentes, Talia"
+    "Fuhrman, Scott"
+    "Fukumoto, Beth"
+    "Fulcher, Russ"
+    "Fulford, Jonathan"
+    "Fuller, Virginia"
+    "Fullington, Brad"
+    "Furay, Guy"
+    "Furstenberg, Lori"
+    "Gabbard, John"
+    "Gabbard, Tulsi"
+    "Gaetz, Matt"
+    "Gagliardi, Deborah"
+    "Gaither, Kevin"
+    "Galbraith, Allison"
+    "Galbraith, John Michael"
+    "Gale, Neal"
+    "Gallagher, Mike"
+    "Gallant, Rick"
+    "Gallego, Ruben"
+    "Gallegos, Alex"
+    "Gallo, Louis"
+    "Galvin, Alyse"
+    "Ganjoo, Shalesh"
+    "Garamendi, John"
+    "Garbett, Jan"
+    "Garcia, Adrian"
+    "Garcia, Dominique"
+    "Garcia, Enrique"
+    "Garcia, Jesus"
+    "Garcia, Joshua M"
+    "Garcia, Ramon Hyron"
+    "Garcia, Roel"
+    "Garcia, Sylvia"
+    "Garcia-Ureste, Alia"
+    "Gardner, Jonah"
+    "Garfield, Daniel G."
+    "Garland, Jerone"
+    "Garrett, Janet"
+    "Garrett, Tom"
+    "Garrod, Eponine"
+    "Garves, Ben"
+    "Garza, Mauro"
+    "Garza, Melissa 'Sharkie'"
+    "Gaskins, Samuel"
+    "Gaspar, Kristin"
+    "Gasper, Theresa"
+    "Gasque, Dorothy"
+    "Gassman, Eddie"
+    "Gaughan, Lawrence"
+    "Gayot, Lutchi"
+    "Gazala, Sarah"
+    "Gearheart, Marty"
+    "Gebbia, Jack"
+    "Genovese, Sal"
+    "Gentile, Dominic"
+    "Gentry, Dillon"
+    "George, Gary"
+    "George, John"
+    "Geppert, Katy"
+    "Geren, Mary"
+    "Germanotta, Juliet Dita"
+    "Germanson, Larry"
+    "Gershon, Perry"
+    "Ghee, Antony"
+    "Ghorbani, Shireen"
+    "Ghosh, Rash Bihari"
+    "Ghumman, Usman"
+    "Gianforte, Greg"
+    "Gianukos, Nikolus Dimitry"
+    "Gibbons, Mike"
+    "Gibbs, Bob"
+    "Gibbs, David"
+    "Gibson, Joey"
+    "Gibson, Mark"
+    "Gifford, Rufus"
+    'Gildersleeve, Tim'
+    "Giles, Dave"
+    "Gill, David"
+    "Gillibrand, Kirsten"
+    "Gilmer, Robin"
+    "Gilmore, Michael"
+    "Gilmore, Shawn"
+    "Gilpin, Tim"
+    "Gipson, Fred"
+    "Girgis, Michael Fahmy"
+    "Glassman, Mary"
+    "Glenn, Darryl"
+    "Glisson, Vickie"
+    "Gluck, George"
+    "Goda, Brett"
+    "Godfrey, Aaron"
+    "Godfrey, Curtis"
+    "Gohmert, Louis B Jr"
+    "Goins, Clarence"
+    "Goldberg, Brian"
+    "Golden, Ian"
+    "Golden, Jared"
+    "Goldstein, Beverly A."
+    "Goldstein, Michael"
+    "Gomes, Tim"
+    "Gomez, Jimmy"
+    "Gonzalez, Anthony"
+    "Gonzalez, Jason D."
+    "Gonzalez, Jenniffer"
+    "Gonzalez, Julio"
+    "Gonzalez, Kristen Rosen"
+    "Gonzalez, Rey"
+    "Gonzalez, Richard"
+    "Gonzalez, Travis"
+    "Gonzalez, Vicente"
+    "Gooden, Lance"
+    "Goodlatte, Bob"
+    "Goodman, Shira Ms."
+    "Goodrich, Grant"
+    "Goodwin, David"
+    "Gosai, Dushyant"
+    "Gosar, Paul"
+    "Gottheimer, Josh"
+    "Gowdy, Trey"
+    "Graben, Eric Knox"
+    "Grady, Paul"
+    "Graf, James"
+    "Graham, John"
+    "Graham, Samaria"
+    "Granger, Kay"
+    "Grant, Andrew"
+    "Grant, Kevin"
+    "Grassie, Bill"
+    "Graves, Christopher"
+    "Graves, Garret"
+    "Graves, Sam"
+    "Graves, Tom"
+    "Grawert, Keith"
+    "Gray, Aida"
+    "Gray, Bob"
+    "Gray, Jim"
+    "Gray, Phil"
+    "Grayson, Alan"
+    "Grayson, Dena"
+    "Graziani, John"
+    "Green, Al"
+    "Green, Bill"
+    "Green, Gene"
+    "Green, James"
+    "Green, Mark"
+    "Green, Rick"
+    "Green, Theodore David"
+    "Greenaway, Diedra"
+    "Greene, Joan"
+    "Greene, Michael"
+    "Greenfield, Steven"
+    "Greenfield, Theresa"
+    "Gregory, DuWayne"
+    "Gregory, Jeff"
+    "Greimel, Tim"
+    "Gressmann, Gerhard"
+    "Griesey, Darin"
+    "Griffin, Bradley"
+    "Griffin, Calvin"
+    "Griffin, Clayburn"
+    "Griffin, Jim"
+    "Griffin, Michelle"
+    "Griffin, Steven"
+    "Griffith, George"
+    "Griffith, Morgan"
+    "Griggs, David R."
+    "Grigorian, Christina"
+    "Grijalva, Raul M"
+    "Grimes, Demetries"
+    "Grimm, Michael"
+    "Grisez, Brandon"
+    "Grohman, Marty"
+    "Gross, Ken"
+    "Grossman, Seth"
+    "Grothman, Glenn S"
+    "Grubbs, Mackenzie"
+    "Gruber, Jason Bradley"
+    "Grunau, Jeffrey"
+    "Grundmann, Don"
+    "Grunwald, John"
+    "Grusenmeyer, Michael"
+    "Guest, Michael Patrick"
+    "Guild, Tom"
+    "Guillory, Josh"
+    "Guillory, Ryan"
+    "Gumina, Tony"
+    "Gunderson, Scott"
+    "Gunnels, Patrick"
+    "Gunning, Jim"
+    "Gupta, Suneel"
+    "Guthrie, Brett"
+    "Gutierrez, Luis V"
+    "Guyette, Matthew"
+    "Haaf, Grace"
+    "Haaland, Debra"
+    "Haas, Bill"
+    "Haberman, Daniel"
+    "Hackett, Pat"
+    "Hader, Shannon"
+    "Hafner, Carol"
+    "Hafner, Eric"
+    "Hagan, Christina"
+    "Hagan, Mallory"
+    "Hagan, Vic"
+    "Hagedorn, Jim"
+    "Hagen, Foster"
+    "Hagerman, Janice Byrd'"
+    "Hagg, Brian G"
+    "Haggman, Matt"
+    "Haggman, Matthew W"
+    "Hahn, Pat"
+    "Haji, Abdulkadir"
+    "Halcovage, George"
+    "Hale, Christopher"
+    "Hall, Isadore"
+    "Hall, Jerry"
+    "Hall, Matthew"
+    "Hall, Mel"
+    "Hall, Seth"
+    "Halverstadt, Jon"
+    "Halvorson, Art"
+    "Hamadanchy, Kia"
+    "Hamblin, Hank"
+    "Hamilton, Dan"
+    "Hamilton, Eddie"
+    "Hammer, Alex"
+    "Hammond, Larry Guy"
+    "Hammond, Scott"
+    "Hanania, Jason"
+    "Hancock, Joshua L"
+    "Handel, Karen"
+    "Hanlon, Karl"
+    "Hansen, Michael"
+    "Hansen, West"
+    "Hanson, Ben"
+    "Hanson, Cyndi"
+    "Hanson, Dave"
+    "Hanson, Tom"
+    "Harbaugh, Ken"
+    "Harber, Jason Allen"
+    "Harder, Josh"
+    "Hardy, Charlie"
+    "Hardy, Cresent"
+    "Harkey, Diane"
+    "Harmon, Patrick"
+    "Harmon, Wayne E"
+    "Harper, Gregg"
+    "Harper, Sean"
+    "Harrell, Sally"
+    "Harrell, Vic"
+    "Harris, Andy"
+    "Harris, Irving"
+    "Harris, Katherine Moore"
+    "Harris, Kerri"
+    "Harris, Mark"
+    "Harris, Matt"
+    "Harris, Pat"
+    "Harris, Tamara"
+    "Harris, Thomas E"
+    "Harris, Tim"
+    "Harrison, Adam"
+    "Harrison, Kevin"
+    "Harrison, Peter"
+    "Harrison, Tom"
+    "Hart, Kristopher"
+    "Hart, Richard"
+    "Hartford, Andrew"
+    "Hartley, Michael"
+    "Hartman, Christina"
+    "Hartman, Darrell"
+    "Hartman, Katherine"
+    "Hartson, Alison"
+    "Hartzler, Vicky"
+    "Harvey, Floyd"
+    "Hash, Martin"
+    "Hashimi, Nadia"
+    "Haskell, Jason"
+    "Hassan, Muad"
+    "Hassell, Mel"
+    "Hassett, Doug"
+    "Hastings, Alcee L"
+    "Hatch, Orrin G"
+    "Hatfield, Kenneth"
+    "Haulmark, Chris"
+    "Havens, Jonathan"
+    "Hawkins, Matt C"
+    "Hawley, Josh"
+    "Hayes, Jahana"
+    "Haywood, Chaz"
+    "Hazel, Robert"
+    "Hazel, Shane"
+    "Hearsey, Chris"
+    "Heck, Dennis"
+    "Heck, Tom"
+    "Heckroth, Thomas"
+    "Heenan, John"
+    "Heffernan, Peter"
+    "Hegar, Mary Jennings"
+    "Heidel, Jack"
+    "Heineman, Aaron"
+    "Heines, Matthew D"
+    "Heinrich, Martin"
+    "Heinz, Matt"
+    "Heise, Kurt"
+    "Heitkamp, Heidi"
+    "Heitner, Jesse Andrew"
+    "Heller, Dean"
+    "Helm, Travis"
+    "Helmer, Daniel"
+    "Henderson, Deidre"
+    "Henderson, Nick"
+    "Henderson, Terry"
+    "Hendricks, Michael"
+    "Hendrickson, Duwayne"
+    "Hendrickson, George"
+    "Heng, Elizabeth"
+    "Henry, Brendon"
+    "Henry, David Dean"
+    "Henry, Ed"
+    "Henry, James Francis Mr."
+    "Henry, William O"
+    "Hensarling, Jeb"
+    "Hepburn, Michael"
+    "Hermanson, Barry"
+    "Hern, Kevin"
+    "Hernandez, Alexander"
+    "Hernandez, Benjamin"
+    "Hernandez, Carlos"
+    "Hernandez, Christian"
+    "Hernandez, Sara"
+    "Hernandez, Sema"
+    "Herrell, Yvette"
+    "Herrod, Chris"
+    "Herschel, Judy"
+    "Herschfus, Marc"
+    "Hertzler, John G"
+    "Heslin, Alison"
+    "Hewitt, Martin"
+    "Hice, Jody B"
+    "Hickey, Adam"
+    "Hicks, Sander"
+    "Hicks, Tom"
+    "Hidalgo, Juan"
+    "Higgins, Brian M"
+    "Higgins, Clay"
+    "Hildebrand, David"
+    "Hildebrandt, Madeline"
+    "Hildt, Robert"
+    "Hile, Brian"
+    "Hill Knott, Kimberly"
+    "Hill, Dean"
+    "Hill, French"
+    "Hill, Judson"
+    "Hill, Katie"
+    "Hill, Owen"
+    "Hill, Ryan"
+    "Hill, Shak"
+    "Hill, Tracella Lou O'Hara"
+    "Hillgardner, Thomas J"
+    "Hilliard, Jerome C"
+    "Himes, Jim"
+    "Hinchman, Clayton"
+    "Hinson, Yvonne Hayes"
+    "Hirono, Mazie K"
     Hoagenson, Renee
     Hoar, Will
     Hobson, Rich
