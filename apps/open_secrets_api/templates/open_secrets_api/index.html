@@ -17,7 +17,7 @@
 <h3><a href="/other_states">Choose Another State</a></h3>
 <div class="container">
     <h1>Open Secrets Political Spending API</h1>
-    <h2>California Legislators</h2>
+    <h2>{{ session_state_name }} Legislators</h2>
     {% for legislator in legislators_array %}
         <h2>{{legislator.firstlast}}</h2>
         {% if legislator.party == 'D' %}

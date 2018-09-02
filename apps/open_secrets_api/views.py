@@ -2,10 +2,12 @@ from django.shortcuts import render, redirect
 import requests
 import json
 from objectpath import *
+from state_dict import state_dict
 
 # Create your views here.
 def index(request):
     session_state_abr = request.session['state_abr']
+    session_state_name = request.session['state_name']
     print("Session State Abbreviation: " + str(session_state_abr))
     attributes = '@attributes'
     url_root = 'http://www.opensecrets.org/api/?method=getLegislators&id='
@@ -18,26 +20,26 @@ def index(request):
     # print("Response: " + str(ca_legs_response))
     ca_legislator = ca_legs_response['legislator']
     print("California Legislators: " + str(ca_legislator))
+    # legislator_count = ca_legislator.count()
+    # print("Legislator Count: " + str(legislator_count))
 
     legislators_array = []
     
-    for i in range(0, 10):
+    for i in range(0, len(ca_legislator)):
         legislator = ca_legislator[i][attributes]
         print("Legislator: " + str(legislator))
         legislators_array.append(legislator)
-        # legs = legislators_array[i]
-        # print("Legs: " + str(legs))
-        print("i = " + str(i))
         i += 1
-        print("NOW i = " + str(i))
-
+    
+    # print("Dictionary Item: " + str(state_dict['UT']))
     context = {
         'attributes': attributes,
         'ca_legislator': ca_legislator,
         'ca_legs': ca_legs,
         'ca_legs_response': ca_legs_response,
         'legislators_array': legislators_array,
-        # 'legs': legs,
+        'session_state_abr': session_state_abr,
+        'session_state_name': session_state_name,
         }
     return render(request, 'open_secrets_api/index.html', context)
 
@@ -54,7 +56,7 @@ def candidate_contributions(request):
     print("Contributors: " + str(contributors))
     candidate_contributor = contributors['contributor']
     print("Candidate Contributor: " + str(candidate_contributor))
-    for i in range(0,10):
+    for i in range(0,len(candidate_contributor)):
         donors = candidate_contributor[i][attributes]
         print("Donor # " + str(i+1) + ": " + str(donors))
         donors_array.append(donors)
@@ -164,8 +166,14 @@ def other_states(request):
         print("State Abbreviation: " + str(state_abr))
         request.session['state_abr'] = state_abr
         session_state_abr = request.session['state_abr']
+        state_name = state_dict[session_state_abr]
+        request.session['state_name'] = state_name
+        print("State Name: " + str(state_name))
+        session_state_name = request.session['state_name'] 
+        print("Session State Name: " + str(session_state_name))
         context = {
             'session_state_abr': session_state_abr,
+            'session_state_name': session_state_name
         }
         return redirect('/', context)
     if request.method == 'GET':
