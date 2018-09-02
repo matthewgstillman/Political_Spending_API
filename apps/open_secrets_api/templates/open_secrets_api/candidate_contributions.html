@@ -26,9 +26,9 @@
     <h1>Donors For Diane Feinstein </h1>
     {% for donor in donors_array %}
             <h3>{{ donor.org_name }}</h3>
-            <h6>Total Individual Contributions: {{ donor.indivs }}</h6>
-            <h6>Total Donations: {{ donor.total }}</h6>
-            <h6>Total PAC Contributions: {{ donor.pacs }}</h6>
+            <h6>Total Individual Contributions: ${{ donor.indivs }}</h6>
+            <h6>Total Donations: ${{ donor.total }}</h6>
+            <h6>Total PAC Contributions: ${{ donor.pacs }}</h6>
             <br>
     {% endfor %}
 </div>

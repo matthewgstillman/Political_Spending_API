@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Candidate Contributions By Sector</title>
+{% endblock%}
+
+
+{% block content %}
+<a href="/">Go Back</a>
+<br>
+<a href="/candidate_summary">See Candidate Contributions</a>
+<br>
+<a href="/expenditures">Independent Expenditures</a>
+<br>
+<div class="container">
+    <h1>Open Secrets Political Spending API</h1>
+    <h1>Top Donation By Sector For {{sector_attributes.cand_name}}</h1>
+    {% for sector in sector_array %}
+        <h2>{{ sector.sector_name }}</h2>
+        <h6>Total Donations: ${{ sector.total}}</h6>
+        <h6>Total Individual Donations: ${{ sector.indivs }}</h6>
+        <h6>Total PAC Donations: ${{ sector.pacs }}</h6>
+        <h6>Sector ID: {{ sector.sectorid }}</h6>
+    {% endfor %}
+    <br>
+</div>
+{% endblock %}

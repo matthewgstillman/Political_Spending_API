@@ -119,6 +119,31 @@ def candidate_industry(request):
     }
     return render(request, 'open_secrets_api/candidate_industry.html', context)
 
+def candidate_sectors(request):
+    sector_array = []
+    attributes = '@attributes'
+    url = ('http://www.opensecrets.org/api/?method=candSector&cid=N00007364&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    response = requests.get(url)
+    # sectors = response['sectors']
+    # print("Sectors " + str(sectors))
+    campaign_sectors = response.json()
+    print("Candidate Sectors: " + str(campaign_sectors))
+    sector_attributes = campaign_sectors['response']['sectors'][attributes]
+    print("Sector Attributes: " + str(sector_attributes))
+    for i in range(0, 13):
+        sector = campaign_sectors['response']['sectors']['sector'][i][attributes]
+        print("Sector: " + str(sector))
+        sector_array.append(sector)
+        i += 1
+    # sector = sector_attributes
+    context = {
+        'sector': sector,
+        'sector_array': sector_array,
+        'sector_attributes': sector_attributes,
+        'campaign_sectors': campaign_sectors,
+    }
+    return render(request, 'open_secrets_api/candidate_sectors.html', context)
+
 def candidate_summary(request):
     attributes = '@attributes'
     url = ('http://www.opensecrets.org/api/?method=candSummary&cid=N00007364&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
