@@ -114,6 +114,7 @@ def candidate_industry(request):
     return render(request, 'open_secrets_api/candidate_industry.html', context)
 
 def candidate_summary(request):
+    attributes = '@attributes'
     url = ('http://www.opensecrets.org/api/?method=candSummary&cid=N00007360&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
     response = requests.get(url)
     candidate_summaries = response.json()
@@ -121,6 +122,9 @@ def candidate_summary(request):
     candidate_summary_response = candidate_summaries['response']
     candidate_summary = candidate_summary_response['summary']
     #.items() or .iteritems - with () - for iterating
+    candidate_summary_attributes = candidate_summary[attributes]
+    print("Candidate Summary Attributes: " + str(candidate_summary_attributes))
+    origin = candidate_summary_attributes['origin']
     items_array = []
     for key, value in candidate_summary_response.iteritems():
         print(key, value)
@@ -131,8 +135,10 @@ def candidate_summary(request):
                 print("Item: " + str(item))
                 items_array.append(item)
             context = {
+                'attributes': attributes,
                 'items_array': items_array,
                 'candidate_summary': candidate_summary,
+                'candidate_summary_attributes': candidate_summary_attributes,
                 'candidate_summary_response': candidate_summary_response,
             }
             return render(request, 'open_secrets_api/candidate_summary.html', context)
