@@ -19,6 +19,7 @@
     <h1>Open Secrets Political Spending API</h1>
     <h2>{{ session_state_name }} Legislators</h2>
     {% for legislator in legislators_array %}
+        </h1>
         <h2>{{legislator.firstlast}}</h2>
         {% if legislator.party == 'D' %}
         <h6>Party: Democrat</h6>
@@ -39,7 +40,9 @@
         {% endif %}
         <h6>Office: {{legislator.congress_office}}</h6>
         <h6>Phone: {{legislator.phone}}</h6>
+        {% if legislator.fax %}
         <h6>Fax: {{legislator.fax}}</h6>
+        {% endif %}
         {% if legislator.twitter_id %}
         <h6>Twitter: <a href="http://www.twitter.com/{{legislator.twitter_id}}">@{{legislator.twitter_id}}</a></h6>
         {% endif %}
@@ -50,7 +53,9 @@
         <h6>Youtube URL: <a href="http://www.youtube.com/{{legislator.youtube_url}}">http://www.youtube.com/{{legislator.youtube_url}}</a></h6>
         {% endif %}
         <h6>Bioguide ID: {{legislator.bioguide_id}}</h6>
+        {% if legislator.votesmart_id %}
         <h6>Votesmart ID: {{legislator.votesmart_id}}</h6>
+        {% endif %}
         <br>
     {% endfor %}
 </div>
