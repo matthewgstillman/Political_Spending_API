@@ -3,6 +3,7 @@ import requests
 import json
 from objectpath import *
 from state_dict import state_dict
+from cid_list import cid_list, name_list
 
 # Create your views here.
 def index(request):
@@ -215,3 +216,17 @@ def other_states(request):
         return redirect('/', context)
     if request.method == 'GET':
         return render(request, 'open_secrets_api/other_states.html')
+
+
+def select_candidate(request):
+    candidate_dict = {}
+    # print(name_list)
+    # print(cid_list)
+    for i in name_list:
+        for j in cid_list:
+            pass
+            # print(i, j)
+    # print candidate_dict
+    context = {
+    }
+    return render(request, 'open_secrets_api/select_candidate.html', context)

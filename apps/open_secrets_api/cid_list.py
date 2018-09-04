@@ -1,4 +1,4 @@
-cid_ditct = {
+cid_list = [
     'N00034296',
     'N00040877',
     'N00040419',
@@ -3514,9 +3514,9 @@ cid_ditct = {
     'N00041521',
     'N00042077',
     'N00041631',
-}
+]
 
-name_dict = {
+name_list = [
     "Aalders, Tim",
     "Aarestad, David",
     "Abatecola, Bill",
@@ -3707,7 +3707,7 @@ name_dict = {
     "Barton, Joe",
     "Bartos, Jeff",
     "Barzee Flores, Mary",
-    "Basler, Doug".
+    "Basler, Doug",
     "Bass, Bill",
     "Bass, Karen",
     "Bassilian, Ron",
@@ -7032,4 +7032,4 @@ name_dict = {
     "Zubia, Adolf",
     "Zuniga, Miguel",
     "Zwahlen, Sue",
-}
+]
