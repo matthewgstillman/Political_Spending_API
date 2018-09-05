@@ -219,14 +219,18 @@ def other_states(request):
 
 
 def select_candidate(request):
-    candidate_dict = {}
+    candidate_list = []
+    names_length = len(name_list)
+    cid_length = len(cid_list)
+    print("Length of Names = " + str(names_length))
+    print("Length of CIDs = " + str(cid_length))
     # print(name_list)
     # print(cid_list)
-    for i in name_list:
-        for j in cid_list:
-            pass
-            # print(i, j)
-    # print candidate_dict
+    # for i in name_list:
+    #     for j in cid_list:
+            
     context = {
+        'candidate_list': candidate_list,
+        # 'candidate_dict': candidate_dict,
     }
     return render(request, 'open_secrets_api/select_candidate.html', context)
