@@ -18,6 +18,7 @@
 <div class="container">
     <h1>Open Secrets Political Spending API</h1>
     <h2>{{ session_state_name }} Legislators</h2>
+    {{ legislators_id_array }}
     {% for legislator in legislators_array %}
         </h1>
         <h2>{{legislator.firstlast}}</h2>

@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 import requests
 import json
+import wikipedia
 from objectpath import *
 from state_dict import state_dict
 from cid_list import cid_list, name_list
@@ -21,8 +22,6 @@ def index(request):
     # print("Response: " + str(ca_legs_response))
     ca_legislator = ca_legs_response['legislator']
     print("California Legislators: " + str(ca_legislator))
-    # legislator_count = ca_legislator.count()
-    # print("Legislator Count: " + str(legislator_count))
 
     legislators_array = []
     legislators_id_array = []
@@ -30,13 +29,13 @@ def index(request):
     for i in range(0, len(ca_legislator)):
         legislator = ca_legislator[i][attributes]
         name = ca_legislator[i][attributes]['firstlast']
-        candidate_id = ca_legislator[i][attributes]['bioguide_id']
+        candidate_id = ca_legislator[i][attributes]['cid']
         print("Candidate ID: " + str(candidate_id))
         print("Name: " + str(name))
         print("Legislator: " + str(legislator))
         legislators_array.append(legislator)
-        legislators_id_array.append(candidate_id)
         legislators_id_array.append(name)
+        legislators_id_array.append(candidate_id)
         i += 1
     context = {
         'attributes': attributes,
@@ -182,12 +181,10 @@ def expenditures(request):
     url = ('http://www.opensecrets.org/api/?method=independentExpend&output=json&apikey=11c4c60af966085902db37697f3c52e3')
     response = requests.get(url)
     expenditures = response.json()
-    print("Expenditures: " + str(expenditures))
     expenditure_response = expenditures['response']
     expenditure_index = expenditure_response['indexp']
     for i in range(0,50):
         expenditure_item = expenditure_index[i][attributes]
-        print("Expenditure Item: " + str(expenditure_item))
         expenditure_item_array.append(expenditure_item)
         i += 1
     context = {

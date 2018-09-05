@@ -24,6 +24,7 @@ state_dict = {
     'MI': 'Michigan',
     'MN': 'Minnesota',
     'MO': 'Missouri',
+    'MS': 'Mississippi',
     'MT': 'Montana',
     'NE': 'Nebraska',
     'NV': 'Nevada',
