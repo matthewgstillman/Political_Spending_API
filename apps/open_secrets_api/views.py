@@ -5,16 +5,27 @@ import wikipedia
 from objectpath import *
 from state_dict import state_dict
 from cid_list import cid_list, name_list
+from candidate_dict import candidate_dict
+from api_key import api_key
 
 # Create your views here.
 def index(request):
     session_state_abr = request.session['state_abr']
     session_state_name = request.session['state_name']
+    for key, value in candidate_dict[session_state_name].iteritems():
+        print("Key: " + str(key) + ", Value: " + str(value))
+    state_legislators = candidate_dict[session_state_name]
+    print("State Legislators: " + str(state_legislators))
+    # if session_state_name in candidate_dict:
+    #     print("Session State Name: " + str(candidate_dict[session_state_name]))
+    # else:
+    #     pass
     print("Session State Abbreviation: " + str(session_state_abr))
     attributes = '@attributes'
     url_root = 'http://www.opensecrets.org/api/?method=getLegislators&id='
-    url_tail = '&output=json&apikey=11c4c60af966085902db37697f3c52e3'
-    url = str(url_root) + str(session_state_abr) + str(url_tail)
+    url_middle = '&output=json&apikey='
+    url_tail = api_key['api_key']
+    url = str(url_root) + str(session_state_abr) + str(url_middle) + str(url_tail)
     print("URL: " + str(url))
     response = requests.get(url)
     ca_legs = response.json()
@@ -46,13 +57,17 @@ def index(request):
         'legislators_id_array': legislators_id_array,
         'session_state_abr': session_state_abr,
         'session_state_name': session_state_name,
+        'state_legislators': state_legislators,
         }
     return render(request, 'open_secrets_api/index.html', context)
 
 def candidate_contributions(request):
     donors_array = []
     attributes = '@attributes'
-    url = ('https://www.opensecrets.org/api/?method=candContrib&cid=N00007364&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    url_root = 'https://www.opensecrets.org/api/?method=candContrib&cid=N00007364&cycle=2018&output=json&apikey='
+    url_tail = api_key['api_key']
+    # url_tail = '11c4c60af966085902db37697f3c52e3'
+    url = str(url_root) + str(url_tail)
     response = requests.get(url)
     candidate_contributions = response.json()
     # print("Candidate Contributions: " + str(candidate_contributions))
@@ -94,8 +109,10 @@ def candidate_contributions(request):
 def candidate_industry(request):
     industry_type_array = []
     attributes = '@attributes'
+    url_root = 'https://www.opensecrets.org/api/?method=candIndustry&cid=N00007364&cycle=2018&output=json&apikey='
+    url_tail = api_key['api_key']
+    url = str(url_root) + str(url_tail)
     url = ('https://www.opensecrets.org/api/?method=candIndustry&cid=N00007364&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
-    # url = ('http://www.opensecrets.org/api/?method=candSummary&cid=N00007360&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
     response = requests.get(url)
     candidate_industry = response.json()
     print("Candidate Donations By Industry: " + str(candidate_industry))

@@ -19,13 +19,13 @@ candidate_dict = {
         'Doug LaMalfa': 'N00033987', 'Jared Huffman': 'N00033030', 'John Garamendi': 'N00030856', 'Tom McClintock': 'N00006863', 'Mike Thompson': 'N00007419', 'Doris O Matsui': 'N00027459', 'Ami Bera': 'N00030717', 'Paul Cook': 'N00034224', 'Jerry McNerney': 'N00026926', 'Jeff Denham': 'N00031593', 'Mark Desaulnier': 'N00030709', 'Nancy Pelosi': 'N00007360', 'Barbara Lee': 'N00008046', 'Jackie Speier': 'N00029649', 'Eric Swalwell': 'N00033508', 'Jim Costa': 'N00026341', 'Ro Khanna': 'N00026427', 'Anna Eshoo': 'N00007335', 'Zoe Lofgren': 'N00007479', 'Jimmy Panetta': 'N00038601', 'David Valadao': 'N00033367', 'Devin Nunes': 'N00007248', 'Kevin McCarthy': 'N00028152', 'Salud Carbajal': 'N00037015', 'Steve Knight': 'N00035820', 'Julia Brownley': 'N00034254', 'Judy Chu': 'N00030600', 'Adam Schiff': 'N00009585', 'Tony Cardenas': 'N00033373', 'Brad Sherman': 'N00006897', 'Pete Aguilar': 'N00033997', 'Grace Napolitano': 'N00006789', 'Ted Lieu': 'N00035825', 'Xavier Becerra': 'N00009774', 'Jimmy Gomez': 'N00040597', 'Norma Torres': 'N00036107', 'Raul Ruiz': 'N00033510', 'Karen Bass': 'N00031877', 'Linda Sanchez': 'N00024870', 'Ed Royce': 'N00008264', 'Lucille Roybal-Allard': 'N00006671', 'Mark Takano': 'N00006701', 'Ken Calvert': 'N00007099', 'Maxine Waters': 'N00006690', 'Nanette Barragan': 'N00037019', 'Mimi Walters': 'N00035391', 'Lou Correa': 'N00037260', 'Alan Lowenthal': 'N00033274', 'Dana Rohrabacher': 'N00007151', 'Darrell Issa': 'N00007017', 'Duncan D Hunter': 'N00029258', 'Juan Vargas': 'N00007021', 'Scott Peters': 'N00033591', 'Susan A Davis': 'N00009604', 'Kamala D Harris': 'N00036915', 'Dianne Feinstein': 'N00007364'
     },
     'Colorado': {
-        'Diana DeGette': 'N00006134', 'Jared Polis': 'N00029127', 'Scott Tipton': 'N00027509', 'Kenneth R Buck': 'N00030829', 'Douglas L Lamborn': 'N00028133', 'Mike Coffman': 'N00024753','Ed Perlmutter': 'N00027510', 'Michael F Bennet': 'N00030608', 'Cory Gardner': 'N00030780']
+        'Diana DeGette': 'N00006134', 'Jared Polis': 'N00029127', 'Scott Tipton': 'N00027509', 'Kenneth R Buck': 'N00030829', 'Douglas L Lamborn': 'N00028133', 'Mike Coffman': 'N00024753','Ed Perlmutter': 'N00027510', 'Michael F Bennet': 'N00030608', 'Cory Gardner': 'N00030780'
     },
     'Connecticut': {
         'John B Larson': 'N00000575', 'Joe Courtney': 'N00024842', 'Rosa L DeLauro': 'N00000615', 'Jim Himes': 'N00029070', 'Elizabeth Esty': 'N00033217', 'Christopher S Murphy': 'N00027566', 'Richard Blumenthal': 'N00031685'
     },
     'Deleware': {
-        'Lisa Blunt Rochester': 'N00038414', 'Tom Carper': 'N00012508', 'Chris Coons': 'N00031820']
+        'Lisa Blunt Rochester': 'N00038414', 'Tom Carper': 'N00012508', 'Chris Coons': 'N00031820'
     },
     'Florida': {
         'Matt Gaetz': 'N00039503', 'Neal Dunn': 'N00037442', 'Ted Yoho': 'N00033220', 'John Rutherford': 'N00039777', 'Al Lawson': 'N00030642', 'Ron DeSantis': 'N00034746', 'Stephanie Murphy': 'N00040133', 'Bill Posey': 'N00029662', 'Darren Soto': 'N00037422', 'Val Demings': 'N00033449', 'Daniel Webster': 'N00026335', 'Gus Bilirakis': 'N00027462', 'Charlie Crist': 'N00002942', 'Kathy Castor': 'N00027514', 'Dennis Ross': 'N00030645', 'Vernon Buchanan': 'N00027626', 'Tom Rooney': 'N00029018', 'Brian Mast': 'N00037269', 'Francis Rooney': 'N00040007', 'Alcee L Hastings': 'N00002884', 'Lois J Frankel': 'N00002893', 'Ted Deutch': 'N00031317', 'Debbie Wasserman Schultz': 'N00026106', 'Frederica Wilson': 'N00030650', 'Mario Diaz-Balart': 'N00025337', 'Carlos Curbelo': 'N00035403', 'Ileana Ros-Lehtinen': 'N00002858', 'Bill Nelson': 'N00009926', 'Marco Rubio': 'N00030612'
@@ -40,7 +40,7 @@ candidate_dict = {
         'Raul Labrador': 'N00031377', 'Mike Simpson': 'N00006263', 'James E Risch': 'N00029441', 'Mike Crapo': 'N00006267'
     },
     'Illinois': {
-        'Bobby L Rush': 'N00004887', 'Robin Kelly': 'N00035215', 'Daniel Lipinski': 'N00027239', 'Luis V Gutierrez': 'N00004874', 'Mike Quigley': 'N00030581', 'Peter Roskam': 'N00004719', 'Danny K Davis': 'N00004884', 'Raja Krishnamoorthi': 'N00033240', 'Jan Schakowsky': 'N00004724', 'Brad Schneider': 'N00033101', 'Bill Foster': 'N00029139', 'Mike Bost': 'N00035420', 'Rodney Davis': 'N00034784', 'Randy Hultgren': 'N00031104', 'John M Shimkus': 'N00004961', 'Adam Kinzinger', :'N00030667', 'Cheri Bustos': 'N00033390', 'Darin LaHood': 'N00037031', 'Dick Durbin': 'N00004981', 'Tammy Duckworth': 'N00027860'
+        'Bobby L Rush': 'N00004887', 'Robin Kelly': 'N00035215', 'Daniel Lipinski': 'N00027239', 'Luis V Gutierrez': 'N00004874', 'Mike Quigley': 'N00030581', 'Peter Roskam': 'N00004719', 'Danny K Davis': 'N00004884', 'Raja Krishnamoorthi': 'N00033240', 'Jan Schakowsky': 'N00004724', 'Brad Schneider': 'N00033101', 'Bill Foster': 'N00029139', 'Mike Bost': 'N00035420', 'Rodney Davis': 'N00034784', 'Randy Hultgren': 'N00031104', 'John M Shimkus': 'N00004961', 'Adam Kinzinger':'N00030667', 'Cheri Bustos': 'N00033390', 'Darin LaHood': 'N00037031', 'Dick Durbin': 'N00004981', 'Tammy Duckworth': 'N00027860'
     },
     'Indiana': {
         'Pete Visclosky': 'N00003813', 'Jackie Walorski': 'N00031226', 'Jim Banks': 'N00037185', 'Todd Rokita': 'N00031741', 'Susan Brooks': 'N00033495', 'Luke Messer': 'N00012546', 'Andre Carson': 'N00029513', 'Larry Bucshon': 'N00031227', 'Trey Hollingsworth': 'N00038429', 'Joe Donnelly': 'N00026586','Todd Young': 'N00030670'
@@ -73,7 +73,7 @@ candidate_dict = {
         'Tim Walz': 'N00027467', 'Jason Lewis': 'N00038400', 'Erik Paulsen': 'N00029391', 'Betty McCollum': 'N00012942', 'Keith Ellison': 'N00028257', 'Tom Emmer': 'N00035440', 'Collin Peterson': 'N00004558', 'Rick Nolan': 'N00021207', 'Al Franken': 'N00029016', 'Tina Smith': 'N00042353', 'Amy Klobuchar': 'N00027500'
     },
     'Mississippi': {
-        'Tim Walz': 'N00027467', 'Jason Lewis': 'N00038400', 'Erik Paulsen': 'N00029391', 'Betty McCollum': 'N00012942', 'Keith Ellison': 'N00028257', 'Tom Emmer': 'N00035440', 'Collin Peterson': 'N00004558', 'Rick Nolan': 'N00021207', 'Al Franken': 'N00029016', 'Tina Smith': 'N00042353', 'Amy Klobuchar', 'N00027500'
+        'Tim Walz': 'N00027467', 'Jason Lewis': 'N00038400', 'Erik Paulsen': 'N00029391', 'Betty McCollum': 'N00012942', 'Keith Ellison': 'N00028257', 'Tom Emmer': 'N00035440', 'Collin Peterson': 'N00004558', 'Rick Nolan': 'N00021207', 'Al Franken': 'N00029016', 'Tina Smith': 'N00042353', 'Amy Klobuchar': 'N00027500'
     },
     'Missouri': {
         'William L Clay Jr.': 'N00012460', 'Ann L Wagner': 'N00033106', 'Blaine Luetkemeyer': 'N00030026', 'Vicky Hartzler': 'N00031005','Emanuel Cleaver': 'N00026790', 'Sam Graves': 'N00013323', 'Billy Long': 'N00030676', 'Jason Smith': 'N00035282', 'Roy Blunt': 'N00005195', 'Claire McCaskill': u'N00027694'
@@ -112,10 +112,10 @@ candidate_dict = {
         'James Bridenstine':'N00033532', 'Markwayne Mullin':'N00033410', 'Frank D Lucas': 'N00005559', 'Tom Cole': 'N00025726', 'Steven Russell': 'N00036175', 'James Lankford': 'N00031129', 'James M Inhofe': 'N00005582'
     },
     'Oregon': {
-        'Suzanne Bonamici': 'N00033474', 'Greg Walden': 'N00007690', 'Earl Blumenauer': 'N00007727', 'Peter DeFazio': 'N00007781', 'Kurt Schrader': 'N00030071', 'Jeff Merkley': 'N00029303','Ron Wyden', 'N00007724'
+        'Suzanne Bonamici': 'N00033474', 'Greg Walden': 'N00007690', 'Earl Blumenauer': 'N00007727', 'Peter DeFazio': 'N00007781', 'Kurt Schrader': 'N00030071', 'Jeff Merkley': 'N00029303','Ron Wyden': 'N00007724'
     },
     'Pennsylvania': {
-        'Robert A. Brady': 'N00001619', 'Dwight Evans': 'N00038450', 'Mike Kelly': 'N00031647', 'Scott Perry': 'N00034120', 'Glenn Thompson': 'N00029736', 'Ryan Costello': 'N00031064', 'Patrick Meehan': 'N00031134', 'Brian Fitzpatrick': 'N00038779', 'Bill Shuster': 'N00013770', 'Tom Marino': 'N00031777', 'Lou Barletta': 'N00025495','Keith J Rothfus': 'N00031253', 'Brendan Boyle': 'N00035307', 'Mike Doyle': 'N00001373', 'Charlie Dent': 'N00026171', 'Lloyd Smucker': 'N00038781', 'Matt Cartwright': 'N00034128', 'Tim Murphy': 'N00024992', 'Conor Lamb': 'N00041870', 'Pat Toomey': 'N00001489', 'Bob Casey': 'N00027503
+        'Robert A. Brady': 'N00001619', 'Dwight Evans': 'N00038450', 'Mike Kelly': 'N00031647', 'Scott Perry': 'N00034120', 'Glenn Thompson': 'N00029736', 'Ryan Costello': 'N00031064', 'Patrick Meehan': 'N00031134', 'Brian Fitzpatrick': 'N00038779', 'Bill Shuster': 'N00013770', 'Tom Marino': 'N00031777', 'Lou Barletta': 'N00025495','Keith J Rothfus': 'N00031253', 'Brendan Boyle': 'N00035307', 'Mike Doyle': 'N00001373', 'Charlie Dent': 'N00026171', 'Lloyd Smucker': 'N00038781', 'Matt Cartwright': 'N00034128', 'Tim Murphy': 'N00024992', 'Conor Lamb': 'N00041870', 'Pat Toomey': 'N00001489', 'Bob Casey': 'N00027503'
     },
     'Rhode Island': {
         'David Cicilline': 'N00032019', 'Jim Langevin': 'N00009724', 'Sheldon Whitehouse': 'N00027533', 'Jack Reed': 'N00000362'
