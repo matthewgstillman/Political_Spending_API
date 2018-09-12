@@ -22,9 +22,9 @@
     <h6>Last Updated: {{ candidate_attributes.last_updated }}</h6>
     {% for industry in industry_type_array %}
         <h3>Industry Type: {{ industry.industry_name }}</h3>
-        <h6>Total: {{ industry.total }}</h6>
-        <h6>Total From PACs: {{ industry.pacs }}</h6>
-        <h6>Total From Large Individual Contributions: {{ industry.indivs }}</h6>
+        <h6>Total: ${{ industry.total }}</h6>
+        <h6>Total From PACs: ${{ industry.pacs }}</h6>
+        <h6>Total From Large Individual Contributions: ${{ industry.indivs }}</h6>
         <h6>Industry Code: {{ industry.industry_code }}</h6>
         <br>
     {% endfor %}

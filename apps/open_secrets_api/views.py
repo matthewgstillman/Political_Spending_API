@@ -139,7 +139,9 @@ def candidate_industry(request):
 def candidate_sectors(request):
     sector_array = []
     attributes = '@attributes'
-    url = ('http://www.opensecrets.org/api/?method=candSector&cid=N00007364&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    url_root = 'http://www.opensecrets.org/api/?method=candSector&cid=N00007364&cycle=2018&output=json&apikey='
+    url_tail = api_key['api_key']
+    url = str(url_root) + str(url_tail)
     response = requests.get(url)
     # sectors = response['sectors']
     # print("Sectors " + str(sectors))
@@ -163,13 +165,14 @@ def candidate_sectors(request):
 
 def candidate_summary(request):
     attributes = '@attributes'
-    url = ('http://www.opensecrets.org/api/?method=candSummary&cid=N00007364&cycle=2018&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    url_root = 'http://www.opensecrets.org/api/?method=candSummary&cid=N00007364&cycle=2018&output=json&apikey='
+    url_tail = api_key['api_key']
+    url = str(url_root) + str(url_tail)
     response = requests.get(url)
     candidate_summaries = response.json()
     print("Candidate Summaries: " + str(candidate_summaries))
     candidate_summary_response = candidate_summaries['response']
     candidate_summary = candidate_summary_response['summary']
-    #.items() or .iteritems - with () - for iterating
     candidate_summary_attributes = candidate_summary[attributes]
     print("Candidate Summary Attributes: " + str(candidate_summary_attributes))
     origin = candidate_summary_attributes['origin']
@@ -195,7 +198,9 @@ def candidate_summary(request):
 def expenditures(request):
     expenditure_item_array = []
     attributes = '@attributes'
-    url = ('http://www.opensecrets.org/api/?method=independentExpend&output=json&apikey=11c4c60af966085902db37697f3c52e3')
+    url_root = 'http://www.opensecrets.org/api/?method=independentExpend&output=json&apikey='
+    url_tail = api_key['api_key']
+    url = str(url_root) + str(url_tail)
     response = requests.get(url)
     expenditures = response.json()
     expenditure_response = expenditures['response']
